@@ -5,8 +5,10 @@ const inventory = require('./data/inventory.json');
 const app = express();
 const path = require('path');
 
+// Step A: Serve the static files (CSS, JS, Images) from your frontend folder
 app.use(express.static(path.join(__dirname, 'frontend')));
 
+// Step B: Point the main URL (/) to your index.html file
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
 });
