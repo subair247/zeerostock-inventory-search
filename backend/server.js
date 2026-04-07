@@ -29,7 +29,8 @@ app.get('/search', (req, res) => {
 
 // Home route to show the UI
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+    // This looks one folder up (..) then into the frontend folder
+    res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
 app.listen(PORT, () => {
