@@ -27,9 +27,8 @@ app.get('/search', (req, res) => {
     res.json(results);
 });
 
-// Home route to show the UI
-app.get('*', (req, res) => {
-    // FIXED: Looking one folder up (..) to find index.html
+// Home route to show the UI - UPDATED for Express v5
+app.get('(.*)', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
