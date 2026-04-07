@@ -1,0 +1,12 @@
+[
+  { "id": 1, "productName": "Ergonomic Chair", "category": "Furniture", "price": 120 },
+  { "id": 2, "productName": "Gaming Mouse", "category": "Electronics", "price": 45 },
+  { "id": 3, "productName": "Mechanical Keyboard", "category": "Electronics", "price": 85 },
+  { "id": 4, "productName": "Office Desk", "category": "Furniture", "price": 250 },
+  { "id": 5, "productName": "Monitor Stand", "category": "Accessories", "price": 35 },
+  { "id": 6, "productName": "LED Desk Lamp", "category": "Furniture", "price": 25 },
+  { "id": 7, "productName": "Wireless Headphones", "category": "Electronics", "price": 150 },
+  { "id": 8, "productName": "Laptop Sleeve", "category": "Accessories", "price": 20 },
+  { "id": 9, "productName": "USB-C Hub", "category": "Electronics", "price": 40 },
+  { "id": 10, "productName": "Water Bottle", "category": "Kitchen", "price": 15 }
+]
