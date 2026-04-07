@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Serving the frontend files
-app.use(express.static(path.join(__dirname, 'frontend')));
+// FIXED: Looking one folder up (..) to find the frontend folder
+app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
 // Mock data
 const inventory = [
@@ -29,7 +29,7 @@ app.get('/search', (req, res) => {
 
 // Home route to show the UI
 app.get('*', (req, res) => {
-    // This looks one folder up (..) then into the frontend folder
+    // FIXED: Looking one folder up (..) to find index.html
     res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
